@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Valerie Nyamwaya - Bio</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="bio.html" class="active">Bio</a>
+      <a href="portfolio.html">Portfolio</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="bio-section">
+      <h2>About Me</h2>
+      <p>
+        Hi! I'm Valerie Nyamwaya, a passionate developer and creative thinker. I specialize in building beautiful, 
+        functional web applications that solve real-world problems.
+      </p>
+    </section>
+
+    <section class="bio-section">
+      <h2>Background</h2>
+      <p>
+        With a strong foundation in web technologies and a love for continuous learning, I've worked on diverse projects 
+        ranging from static websites to complex full-stack applications. I believe in writing clean, maintainable code and 
+        creating user experiences that delight.
+      </p>
+    </section>
+
+    <section class="bio-section">
+      <h2>Skills</h2>
+      <ul style="list-style: none; padding: 0;">
+        <li>✓ Frontend Development (HTML, CSS, JavaScript)</li>
+        <li>✓ Responsive Design</li>
+        <li>✓ Web Development Best Practices</li>
+        <li>✓ Version Control (Git/GitHub)</li>
+        <li>✓ Problem Solving & Debugging</li>
+        <li>✓ UI/UX Principles</li>
+      </ul>
+    </section>
+
+    <section class="bio-section">
+      <h2>What I'm Passionate About</h2>
+      <p>
+        I'm driven by the intersection of creativity and technology. Whether it's crafting elegant user interfaces, 
+        optimizing performance, or mentoring other developers, I'm committed to making a positive impact through code.
+      </p>
+      <p style="margin-top: 1rem;">
+        In my free time, I love exploring new technologies, contributing to open-source projects, and sharing my knowledge 
+        with the community.
+      </p>
+    </section>
+
+    <section class="bio-section">
+      <h2>Let's Connect</h2>
+      <p>
+        I'm always interested in collaborating on exciting projects or just having a chat about code and creativity. 
+        Feel free to reach out!
+      </p>
+      <p style="margin-top: 1rem;">
+        <a href="mailto:your.email@example.com" class="cta-button">Get In Touch</a>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Valerie Nyamwaya. All rights reserved.</p>
+    <p>
+      <a href="https://github.com/valerienyamwaya">GitHub</a> | 
+      <a href="https://linkedin.com">LinkedIn</a> | 
+      <a href="mailto:your.email@example.com">Email</a>
+    </p>
+  </footer>
+
+  <script>
+    // Set active nav link based on current page
+    document.querySelectorAll('nav a').forEach(link => {
+      if (link.href === window.location.href) {
+        link.classList.add('active');
+      }
+    });
+  </script>
+</body>
+</html>
