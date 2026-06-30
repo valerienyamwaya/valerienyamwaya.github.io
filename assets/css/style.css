@@ -1,0 +1,59 @@
+:root{
+  --bg:#0b0f14;
+  --surface:#0f1720;
+  --muted:#9aa6b2;
+  --text:#e6eef8;
+  --accent:#6ee7b7;
+  --accent-2:#7dd3fc;
+  --border: rgba(255,255,255,0.06);
+  --max-width: 880px;
+  --radius: 8px;
+  --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", "Segoe UI Mono", monospace;
+  --sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family:var(--sans);
+  background:linear-gradient(180deg,var(--bg),#05070a);
+  color:var(--text);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  line-height:1.6;
+}
+.inner{max-width:var(--max-width);margin:0 auto;padding:2rem;}
+.site-header{padding:2rem 0;border-bottom:1px solid var(--border)}
+.site-title{margin:0;font-size:1.9rem}
+.site-title a{color:var(--text);text-decoration:none}
+.site-subtitle{margin:0;color:var(--muted);font-size:0.95rem}
+
+.lead{color:var(--muted);margin-bottom:1.25rem}
+
+.post{padding:1.25rem 0;border-top:1px solid var(--border)}
+.post-title{margin:0 0 .3rem 0;font-size:1.25rem}
+.post-title a{color:var(--accent-2);text-decoration:none}
+.post .meta{color:var(--muted);font-size:0.9rem;margin-bottom:0.75rem}
+.excerpt{color:var(--text);opacity:0.95}
+
+.post-full{padding:1rem 0}
+.post-content{margin-top:1rem;color:var(--text)}
+a{color:var(--accent);}
+
+/* small screens */
+@media (max-width:640px){
+  .inner{padding:1.25rem}
+  .site-title{font-size:1.5rem}
+}
+
+/* hero & thumbnail styles - added */
+.post-cover { position: relative; margin: 0 0 1.25rem 0; border-radius: 10px; overflow: hidden; }
+.post-cover .hero-image { width: 100%; height: auto; display: block; object-fit: cover; transform: scale(1.02); transition: transform .6s ease; filter: brightness(.55); }
+.post-cover:hover .hero-image { transform: scale(1.04); }
+.hero-overlay { position: absolute; inset: 0; display:flex; align-items:flex-end; background: linear-gradient(180deg, rgba(0,0,0,0.0) 0%, rgba(0,0,0,0.45) 50%, rgba(0,0,0,0.65) 100%); }
+.hero-text { color: var(--text); padding: 2rem; width:100%; }
+.hero-title { margin:0; font-size:clamp(1.25rem, 3vw, 2rem); line-height:1.05; color: #fff; text-shadow: 0 6px 18px rgba(0,0,0,0.6); }
+.hero-sub { margin:0.5rem 0 0; color: var(--muted); }
+.cover-caption { padding: .5rem 1rem; color: var(--muted); font-size:0.9rem; background: rgba(0,0,0,0.28); position: absolute; left: 1rem; bottom: 1rem; border-radius: 6px; }
+.post-list-thumb { width:140px; height:90px; object-fit:cover; border-radius:8px; }
