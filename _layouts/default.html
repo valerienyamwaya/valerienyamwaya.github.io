@@ -15,6 +15,8 @@
     {% assign webp_path = img_path | replace: '.jpg', '.webp' | replace: '.jpeg', '.webp' %}
     <meta property="og:image" content="{{ site.url }}{{ webp_path }}">
     <meta property="og:image:secure_url" content="{{ site.url }}{{ webp_path }}">
+    <meta property="og:image:width" content="1600">
+    <meta property="og:image:height" content="900">
     <meta name="twitter:image" content="{{ site.url }}{{ webp_path }}">
   {% endif %}
   <meta name="twitter:card" content="summary_large_image">
