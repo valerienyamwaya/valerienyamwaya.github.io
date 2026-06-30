@@ -11,8 +11,11 @@
   <meta property="og:description" content="{{ page.excerpt | default: site.description }}">
   <meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
   {% if page.image %}
-  <meta property="og:image" content="{{ site.url }}{{ page.image | relative_url }}">
-  <meta name="twitter:image" content="{{ site.url }}{{ page.image | relative_url }}">
+    {% assign img_path = page.image | relative_url %}
+    {% assign webp_path = img_path | replace: '.jpg', '.webp' | replace: '.jpeg', '.webp' %}
+    <meta property="og:image" content="{{ site.url }}{{ webp_path }}">
+    <meta property="og:image:secure_url" content="{{ site.url }}{{ webp_path }}">
+    <meta name="twitter:image" content="{{ site.url }}{{ webp_path }}">
   {% endif %}
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="{{ page.title | default: site.title }}">
