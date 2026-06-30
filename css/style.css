@@ -10,6 +10,7 @@ body {
   line-height: 1.6;
   color: #333;
   background-color: #f4f4f4;
+  font-size: 16px;
 }
 
 /* Header & Navigation */
@@ -97,11 +98,26 @@ main {
   border-radius: 10px;
   margin-bottom: 2rem;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Improve reading comfort for bio text */
+.bio-section p {
+  line-height: 1.8;
+  font-size: 1.05rem;
+  margin-bottom: 1rem;
+  max-width: 70ch;
+  margin-left: auto;
+  margin-right: auto;
+  color: #222;
 }
 
 .bio-section h2 {
   color: #667eea;
   margin-bottom: 1rem;
+  font-size: 1.4rem;
 }
 
 /* Portfolio Page */
@@ -126,73 +142,18 @@ main {
 }
 
 .portfolio-item-image {
-  width: 100%;
-  height: 200px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-size: 1.2rem;
+  
 }
 
-.portfolio-item-content {
-  padding: 1.5rem;
+/* Responsive adjustments */
+@media (max-width:1200px) {
+  .hero h1 { font-size: 2.5rem; }
 }
 
-.portfolio-item h3 {
-  color: #667eea;
-  margin-bottom: 0.5rem;
-}
-
-.portfolio-item p {
-  color: #666;
-  margin-bottom: 1rem;
-}
-
-.portfolio-link {
-  display: inline-block;
-  color: #667eea;
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s;
-}
-
-.portfolio-link:hover {
-  color: #764ba2;
-}
-
-/* Footer */
-footer {
-  background-color: #282c34;
-  color: white;
-  text-align: center;
-  padding: 2rem 1rem;
-  margin-top: 3rem;
-}
-
-footer a {
-  color: #61dafb;
-  text-decoration: none;
-}
-
-footer a:hover {
-  text-decoration: underline;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  nav {
-    flex-direction: column;
-    gap: 1rem;
-    align-items: center;
-  }
-
-  .hero h1 {
-    font-size: 2rem;
-  }
-
-  .portfolio-grid {
-    grid-template-columns: 1fr;
-  }
+@media (max-width:640px){
+  main { margin: 1rem; }
+  .hero { padding: 2rem 1rem; }
+  .hero h1 { font-size: 1.8rem; }
+  .bio-section { padding: 1.25rem; }
+  .bio-section p { font-size: 1rem; line-height: 1.65; max-width: 100%; }
 }
