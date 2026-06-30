@@ -3,6 +3,9 @@ layout: post
 title: "What Sustainability Looked Like Before We Called It Sustainability"
 date: 2026-06-30
 excerpt: "Reflections on how African communities practised sustainability long before the term existed — through repair, sharing, knowledge transfer, and informal creative economies."
+image: /assets/images/nyatiti-workshop-kobare.jpg
+alt: "Nyatiti-making workshop, Kobare village, Siaya"
+caption: "Nyatiti-making workshop in Kobare village, Siaya"
 ---
 
 I've spent years in conversations about sustainability, particularly within fashion and the creative industries.
