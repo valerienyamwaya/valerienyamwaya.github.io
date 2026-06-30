@@ -49,14 +49,16 @@ a{color:var(--accent);}
 
 /* hero & thumbnail styles - adjusted */
 .post-cover { position: relative; margin: 0 0 1.25rem 0; border-radius: 10px; overflow: hidden; }
-.post-cover .hero-image { width: 100%; height: auto; display: block; object-fit: cover; transform: scale(1.02); transition: transform .6s ease; filter: brightness(.5); }
+.post-cover .hero-image { width: 100%; height: auto; display: block; object-fit: cover; transform: scale(1.02); transition: transform .6s ease; filter: brightness(.48); }
 .post-cover:hover .hero-image { transform: scale(1.04); }
-/* slightly darker overlay for better readability */
-.hero-overlay { position: absolute; inset: 0; display:flex; align-items:flex-end; background: linear-gradient(180deg, rgba(0,0,0,0.18) 0%, rgba(0,0,0,0.60) 55%, rgba(0,0,0,0.75) 100%); }
+/* darker, centered overlay for improved readability */
+.hero-overlay { position: absolute; inset: 0; display:flex; align-items:center; justify-content:center; background: linear-gradient(180deg, rgba(0,0,0,0.28) 0%, rgba(0,0,0,0.72) 55%, rgba(0,0,0,0.85) 100%); text-align:center; }
 .hero-text { color: var(--text); padding: 2rem; width:100%; }
-.hero-title { margin:0; font-size:clamp(1.15rem, 3vw, 1.9rem); line-height:1.05; color: #fff; text-shadow: 0 8px 20px rgba(0,0,0,0.7); }
+/* larger max size for hero title */
+.hero-title { margin:0; font-size:clamp(1.5rem, 4vw, 2.8rem); line-height:1.05; color: #fff; text-shadow: 0 10px 24px rgba(0,0,0,0.75); }
 .hero-sub { margin:0.5rem 0 0; color: var(--muted); }
-.cover-caption { padding: .5rem 1rem; color: var(--muted); font-size:0.9rem; background: rgba(0,0,0,0.48); position: absolute; left: 1rem; bottom: 1rem; border-radius: 6px; }
+/* increased caption contrast */
+.cover-caption { padding: .5rem 1rem; color: var(--muted); font-size:0.9rem; background: rgba(0,0,0,0.7); position: absolute; left: 1rem; bottom: 1rem; border-radius: 6px; }
 .post-list-thumb { width:140px; height:90px; object-fit:cover; border-radius:8px; }
 
 /* author bio styles */
@@ -66,5 +68,5 @@ a{color:var(--accent);}
 /* responsive tweaks for hero */
 @media (max-width:720px){
   .hero-text{padding:1.25rem}
-  .hero-title{font-size:clamp(1.25rem, 5vw, 1.6rem)}
+  .hero-title{font-size:clamp(1.25rem, 6vw, 1.9rem)}
 }
